@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    content
+        h4= text
+        if hint
+            i Hint: #{hint}
+        br
+        a(href=`/cards/${id}?side=${sidenya}`) #{SideToDisplay}
+        br
+        a(href="/cards") Soal Baru
+        br
+        a(href="/goodbye") Udahan Ah!
+
+        //- ul
+        //-     each color in colors
+        //-         li= color
+        
+        //- table
+        //-     thead
+        //-         tr
+        //-             td nama
+        //-             td umur
+        //-     tbody
+        //-         tr
+        //-             td makers
+        //-             td 2
+        //-         tr
+        //-             td institute
+        //-             td 2

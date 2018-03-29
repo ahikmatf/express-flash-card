@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    content
+        h4 Halo, #{username}!
+        a(href="/cards") Buka Kartu
+        br
+        form(action="/goodbye" method="GET")
+            input(type="submit" value="Goodbye!")
+        .ryan
+            h5 waka
+        #ryan
+            h5 wiki
